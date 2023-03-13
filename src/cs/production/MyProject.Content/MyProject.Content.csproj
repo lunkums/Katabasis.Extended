@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>MyProject</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Katabasis.Framework\Katabasis.Framework.csproj" />
+    </ItemGroup>
+
+    <!-- Show the assets in VisualStudio or Rider as linked files. Does not copy the assets to the `bin` directory. For copying the files to the `bin` directory see the main executable `.csproj`. -->
+    <ItemGroup>
+        <None Include="../../../../assets/**/*.*">
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+            <Link>assets/%(RecursiveDir)%(Filename)%(Extension)</Link>
+        </None>
+    </ItemGroup>
+
+</Project>

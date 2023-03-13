@@ -1,0 +1,54 @@
+#
+
+
+# Auto detect text files and perform LF normalization
+*           text=auto
+
+## CODE FILES
+*.md        text
+*.cs        text diff=cs
+*.sln       text merge=union
+*.csproj    text merge=union
+*.xml       text diff=xml
+# Shell scripts require LF
+*.sh        text eol=lf
+# Batch scripts require CRLF
+*.bat       text eol=crlf
+
+## DOCUMENT FILES
+*.doc       text diff=astextplain
+*.docx      text diff=astextplain
+*.dot       text diff=astextplain
+*.pdf       text diff=astextplain
+*.txt       text diff=astextplain
+*.rtf       text diff=astextplain
+
+## ASSET FILES
+
+### SHADERS
+#.fx = Programmable DirectX shaders using HLSL (High-level shader language); contains a pixel shader and a fragment shader which together make a shader program; mostly legacy from XNA
+*.fx            text
+#.fxb = Compiled programmable DirectX shader program; loaded at runtime
+*.fxb           binary
+
+### GRAPHICS
+#.png = Portable Network Graphics file format
+*.png           binary
+#.jpg = Joint Photographic Experts Group (JPEG) file format
+*.jpg           binary
+#.dds = DirectDraw Surface file format
+*.dds           binary
+
+### SOUNDS
+#.wav = Waveform Audio file format
+.wav            binary
+
+### MUSIC
+#.ogg = Xiph.Org Foundation file format commonly used for audio (replacement equivalent for .mp3)
+.ogg            binary
+
+## FONTS
+#.spritefont = XNA font description
+*.spritefont    text diff=xml
+#.ttf = True Type Font
+*.ttf           binary

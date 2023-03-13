@@ -1,0 +1,19 @@
+# Build artifacts
+bin/
+obj/
+
+# JetBrains
+.idea/
+
+# VisualStudio
+*.vs
+
+# User specific
+*.user
+*.userprefs
+
+# macOS
+.DS_Store
+
+# NuGet packages
+/.nuget/
