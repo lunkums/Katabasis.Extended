@@ -1,3 +1,4 @@
-# katabasis-game-template
+# Katabasis.Extended
 
-Template for creating a game using Katabasis.
+MonoGame.Extended => Katabasis.Extended ==
+MonoGame => Katabasis
